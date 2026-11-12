@@ -1,0 +1,9 @@
+{
+  "appId": "com.puente.monitor",
+  "appName": "Monitor ECG",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}
