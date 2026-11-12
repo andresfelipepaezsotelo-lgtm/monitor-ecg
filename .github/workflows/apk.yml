@@ -14,9 +14,9 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
+      - run: mkdir -p www && cp MonitorECG.html www/index.html
       - run: npm install
       - run: npx cap add android
-      - run: npm run iconos
       - run: npx cap sync android
       - run: chmod +x android/gradlew && cd android && ./gradlew assembleDebug
       - uses: actions/upload-artifact@v4
